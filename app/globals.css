@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #ffce22;
+  --primary-color-light: #ffd84d;
+
+  --secondary-color: #2469f6;
+  --secondary-color-light: #5087f8;
+
+  --text-primary: "#1f2128";
+
+  /* Fonts */
+  --ff-roboto: "Roboto";
+  --ff-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--ff-montserrat);
+}

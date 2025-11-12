@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/Elements/Button"
 import { CheckBox } from "@/components/Elements/Checkbox";
-import styles from "@/components/LandingPage/landing-page.module.css";
+import styles from "@/components/pages/LandingPage/landing-page.module.css"
 import { Separator } from "@/components/Elements/Separator";
 
 const checkboxOptions = [

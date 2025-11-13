@@ -26,7 +26,8 @@ async function seed() {
     });
 
     // Create sample posts
-    const [post1] = await db
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [post1]: any = await db
       .insert(posts)
       .values({
         userId: user.id,
@@ -39,7 +40,8 @@ async function seed() {
 
     console.log("✅ Created starting post:", post1.numberValue);
 
-    const [post2] = await db
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [post2]: any = await db
       .insert(posts)
       .values({
         userId: user.id,
@@ -57,7 +59,8 @@ async function seed() {
       result: post2.numberValue,
     });
 
-    const [post3] = await db
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [post3]:any = await db
       .insert(posts)
       .values({
         userId: user.id,

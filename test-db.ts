@@ -1,7 +1,6 @@
 import "@/drizzle/envConfig";
 import { db } from "@/drizzle/db";
 import { users, sessions, posts } from "@/drizzle/schema";
-import { eq } from "drizzle-orm";
 
 async function testDatabase() {
   try {

@@ -45,7 +45,8 @@ export const sessions = pgTable(
   }
 );
 
-export const posts = pgTable(
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const posts:any = pgTable(
   "posts",
   {
     id: serial("id").primaryKey(),

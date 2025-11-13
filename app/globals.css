@@ -25,4 +25,16 @@
 
 body {
   font-family: var(--ff-montserrat);
+  color: var(--text-primary);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }

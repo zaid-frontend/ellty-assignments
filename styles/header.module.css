@@ -1,0 +1,103 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px #0000000d;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 94%;
+  margin: 16px auto;
+  max-width: 1200px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Brand/Logo */
+.brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Right Section */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoutForm {
+  margin: 0;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  color: #cc0000;
+  background: #ffe6e6;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Auth Buttons */
+.authButtons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.loginButton,
+.signupButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-block;
+}
+
+.loginButton {
+  background: white;
+  color: var(--text-primary);
+  border: 1px solid #e7e7e7;
+}
+
+.loginButton:hover {
+  background: #f0f5f588;
+}
+
+.signupButton {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.signupButton:hover {
+  background: var(--secondary-color-light);
+}
+

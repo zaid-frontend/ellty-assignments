@@ -1,0 +1,208 @@
+.postContainer {
+  margin-bottom: 20px;
+}
+
+.mainPost {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.replyPost {
+  margin-top: 1px;
+  margin-left: 10px;
+  border-left: 1px solid #e5e7eb;
+}
+
+.postCard {
+  display: flex;
+  gap: 5px;
+  padding: 10px 20px;
+}
+
+/* Avatar Styles */
+.avatarWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatarContainer {
+  flex-shrink: 0;
+}
+
+.mainPost .avatar,
+.mainPost .avatarPlaceholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+
+.replyPost .avatar,
+.replyPost .avatarPlaceholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+.mainPost .avatarPlaceholder,
+.replyPost .avatarPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainPost .avatarPlaceholder svg {
+  width: 30px;
+  height: 30px;
+}
+.replyPost .avatarPlaceholder svg {
+  width: 20px;
+  height: 20px;
+}
+/* Post Content */
+.postContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.timestamp {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btnDelete:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.btnDelete:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Post Body */
+.mainPostBody {
+  margin-bottom: 10px;
+}
+.postBody {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.mainCalculation {
+  padding: 15px 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.mainCalculationText {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 10px;
+}
+
+.calculation {
+  padding: 10px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.calculationText {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+/* Post Footer */
+.postFooter {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.btnReply,
+.btnToggleReplies {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnReply:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+.btnToggleReplies:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.btnReply svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Replies Container */
+.repliesContainer {
+  margin-top: 5px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+  font-size: 15px;
+}

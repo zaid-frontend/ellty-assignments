@@ -10,16 +10,6 @@
 
 .box {
   position: relative;
-  width: 100%;
-  max-width: 370px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px 15px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 0px 4px #1414141a, 0px 8px 15px #1414141f;
-  border-radius: 6px;
 }
 
 .checkboxes-container {
@@ -46,7 +36,7 @@
   color: #2e7d32;
   font-size: 14px;
 }
-.error{
+.error {
   color: #c62828;
   background-color: #ffebee;
 }

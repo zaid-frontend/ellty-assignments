@@ -1,10 +1,12 @@
 "use client";
 
+import styles from "@/styles/pages/landing-page.module.css"
+
 import { useState } from "react";
 import { Button } from "@/components/Elements/Button"
 import { CheckBox } from "@/components/Elements/Checkbox";
-import styles from "@/components/pages/LandingPage/landing-page.module.css"
 import { Separator } from "@/components/Elements/Separator";
+import { Box } from "@/components/Elements/Box";
 
 const checkboxOptions = [
   { label: "Page 1", checked: false },
@@ -57,7 +59,7 @@ const LandingPage = () => {
 
   return (
     <div className={styles["wrapper"]}>
-      <div className={styles["box"]}>
+      <Box className={styles["box"]}>
         <div className={styles["box-title"]}>
           <CheckBox
             id="page-all"
@@ -95,7 +97,7 @@ const LandingPage = () => {
           </div>
         )}
 
-      </div>
+      </Box>
 
     </div>
   );

@@ -1,0 +1,60 @@
+.footer {
+  color: #e0e0e0;
+  margin-top: 60px;
+  padding-block: 20px;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+}
+.footerContainer {
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Divider */
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin-block: 10px;
+}
+
+/* Bottom Section */
+.bottomSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright p {
+  font-size: 13px;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.createdBy p {
+  font-size: 13px;
+  color: #999;
+  margin: 0;
+}
+
+.createdBy strong {
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.email {
+  text-align: center;
+}
+
+.email a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}

@@ -15,6 +15,7 @@ export async function signup(
   state: FormState,
   formData: FormData
 ): Promise<FormState> {
+  // 1. Validate form fields
   const validatedFields = SignupFormSchema.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),
@@ -63,8 +64,11 @@ export async function signup(
     };
   }
 
-  // 5. Create a session for the user (this redirects automatically)
+  // 5. Create a session for the user
   await createSession(user.id);
+  
+  // This line will never be reached because createSession redirects
+  return { message: "Success" };
 }
 
 export async function login(
@@ -106,8 +110,10 @@ export async function login(
     return errorMessage;
   }
 
-  // 4. If login successful, create a session for the user (this redirects automatically)
+  // 4. If login successful, create a session for the user
   await createSession(user.id);
+  
+  return { message: "Success" };
 }
 
 export async function logout() {

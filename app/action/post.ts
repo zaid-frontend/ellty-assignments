@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { db } from "@/drizzle/db";
 import { posts, users } from "@/drizzle/schema";
 import { verifySession } from "@/app/action/02-database-session";
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 
 export async function createStartingNumber(number: number) {
   try {
@@ -107,7 +107,7 @@ export async function getAllPosts() {
       })
       .from(posts)
       .leftJoin(users, eq(posts.userId, users.id))
-      .orderBy(posts.createdAt);
+      .orderBy(desc(posts.createdAt));
 
     return allPosts;
   } catch (error) {
